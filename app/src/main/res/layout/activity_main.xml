@@ -19,16 +19,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewNeutral" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonHappy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/happy"
         android:onClick="onTap2"
-        android:text="Happy"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buttonNeutral"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonNeutral" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/textViewNeutral"
@@ -41,12 +42,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonNeutral"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/neutral"
         android:onClick="onTap1"
-        android:text="Neutral"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonHappy"
         app:layout_constraintStart_toEndOf="@+id/buttonSad"
@@ -63,17 +64,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewNeutral" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonSad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/sad"
         android:onClick="onTap"
-        android:text="Sad"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buttonNeutral"
-        app:layout_constraintEnd_toStartOf="@+id/buttonNeutral"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/buttonReset"

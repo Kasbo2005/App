@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     var countHappy = 0
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
        countSad++
         val textview1 = findViewById(R.id.textViewSad) as TextView
         textview1.text = "$countSad"
+
     }
     fun onTap1(view: View) {
         countNeutral++
@@ -51,6 +53,12 @@ class MainActivity : AppCompatActivity() {
             textview3.text = "$countHappy"
 
     }
+
+
+
+
+
+
 }
 
 
